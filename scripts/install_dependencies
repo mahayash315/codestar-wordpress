@@ -1,0 +1,7 @@
+#!/bin/bash
+cd /var/www/html/
+yum -y update
+yum -y install httpd24 php73 php73-mbstring
+curl -s https://getcomposer.org/installer | php
+php composer.phar install
+php composer.phar require slim/slim "^3.10"
