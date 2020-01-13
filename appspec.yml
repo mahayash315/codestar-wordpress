@@ -19,6 +19,10 @@ files:
     destination: /var/www/html/
   - source: /index.php
     destination: /var/www/html/
+  - source: /wordpress
+    destination: /var/www/html/wordpress
+  - source: /phpinfo.php
+    destination: /var/www/html/
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies
